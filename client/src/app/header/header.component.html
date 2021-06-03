@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span>Investly</span>
+    <div class="spacer"></div>
+    <li *ngIf="!userisAuthenticated"><button mat-raised-button routerLink="/signup">Sign Up</button></li>
+    <li *ngIf="!userisAuthenticated"><button mat-raised-button class="raised-button" routerLink="/login">Log In</button></li>
+    <li *ngIf="userisAuthenticated"><button mat-raised-button class="raised-button" routerLink="/login">Profile Overview</button></li>
+    <li *ngIf="userisAuthenticated"><button mat-raised-button class="raised-button" routerLink="/login">Budget Manager</button></li>
+    <li *ngIf="userisAuthenticated"><button mat-raised-button class="raised-button" routerLink="/login">Portfolio Builder</button></li>
+    <li *ngIf="userisAuthenticated"><button mat-raised-button class="raised-button" routerLink="/login" (click)="onLogOut()">Log Out</button></li>
+
+</mat-toolbar>

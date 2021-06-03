@@ -1,0 +1,10 @@
+mat-card {
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+mat-form-field {
+    width: 50%;
+    display: block;
+}

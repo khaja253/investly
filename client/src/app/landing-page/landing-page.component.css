@@ -1,0 +1,14 @@
+    * {
+        background-color: black;
+    }
+    
+    h1,
+    h2 {
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }

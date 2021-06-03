@@ -1,0 +1,20 @@
+mat-toolbar {
+    background-color: rgb(193, 39, 45);
+    list-style: none;
+}
+
+.spacer {
+    flex: auto;
+}
+
+button {
+    color: rgb(193, 39, 45);
+    background-color: white;
+    margin: 6px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(193, 39, 45);
+    border: solid 1px white;
+}

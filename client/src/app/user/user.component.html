@@ -1,0 +1,40 @@
+<mat-card>
+    <form (submit)="onEnterAmount(peerForm)" #peerForm="ngForm">
+        <mat-card-title>Please Register</mat-card-title>
+        <mat-form-field>
+            <mat-label>Please Enter Your First Name:</mat-label>
+            <input matInput type="text" placeholder="John" name="firstName" ngModel required #firstName="ngModel">
+            <mat-error *ngIf=" firstName.invalid ">Please enter first name</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Please Enter Your Last Name:</mat-label>
+            <input matInput type="text " placeholder=" Doe " name="lastName" ngModel required #lastName="ngModel">
+            <mat-error *ngIf=" lastName.invalid">Please enter last name</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>What's Your Relation with the Peer:</mat-label>
+            <mat-select [(value)]="relation">
+                <mat-option>None</mat-option>
+                <mat-option value="Father">Father</mat-option>
+                <mat-option value="Mother">Mother</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p>You selected: {{relation}}</p>
+        <mat-form-field>
+            <mat-label>Please Enter The Amount:</mat-label>
+            <input type="number " matInput placeholder="$1000 " name="amount" ngModel required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Please Enter valid email:</mat-label>
+            <input type="email" matInput placeholder="$1000 " name="email" ngModel required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Please Enter The Password:</mat-label>
+            <input type="password" matInput placeholder="$1000 " name="password" ngModel required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+</mat-card>
